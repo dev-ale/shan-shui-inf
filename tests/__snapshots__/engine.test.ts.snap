@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`engine > seed 1538000000000 chunk 93 is unchanged 1`] = `
+[
+  "mount x=47854.7 depth=300.0 e4b31b9f68fba783",
+  "water x=47854.7 depth=-9700.0 4bc3ec16e8857b70",
+  "mount x=48162.8 depth=330.0 9f4979a3a3e8fead",
+  "water x=48162.8 depth=-9670.0 d2a90f76d5b35b0f",
+  "mount x=47650.9 depth=360.0 47d50787ce3be20c",
+  "water x=47650.9 depth=-9640.0 9c4fd87466076a77",
+  "mount x=47964.5 depth=390.0 2d9e264e98b09092",
+  "water x=47964.5 depth=-9610.0 0eeeac9231b17e46",
+  "mount x=48260.9 depth=420.0 267c07222f453380",
+  "water x=48260.9 depth=-9580.0 4e33370e9a89456c",
+  "mount x=47928.3 depth=480.0 b32e4aafb069bd12",
+  "water x=47928.3 depth=-9520.0 adea0c64fc404fdd",
+  "mount x=47411.3 depth=300.0 7dde7f1094459102",
+  "water x=47411.3 depth=-9700.0 15b6deb2e5cb75ac",
+  "mount x=48282.0 depth=330.0 cd2b84efbcbd9f7e",
+  "water x=48282.0 depth=-9670.0 b9dd510b90874365",
+  "mount x=48245.7 depth=360.0 3506686234bd3a2a",
+  "water x=48245.7 depth=-9640.0 7a58cf2e9c5f313f",
+  "mount x=47775.7 depth=450.0 53b6b76a65c62bbd",
+  "water x=47775.7 depth=-9550.0 046ad28cced4c694",
+  "mount x=47578.6 depth=480.0 525e91cb56451903",
+  "water x=47578.6 depth=-9520.0 08f11446619000bf",
+  "mount x=48125.9 depth=510.0 cb3f31949f418af0",
+  "water x=48125.9 depth=-9490.0 13b47972a4619c22",
+  "mount x=47467.1 depth=540.0 f65e438a728d35b9",
+  "water x=47467.1 depth=-9460.0 e71dea1b17230ca2",
+  "distmount x=48001.0 depth=271.1 0773123ca4802ef4",
+]
+`;
+
+exports[`engine > seed golden chunk -3 is unchanged 1`] = `
+[
+  "flatmount x=-746.5 depth=700.0 7f0265861784dcd1",
+  "boat x=-1486.0 depth=586.6 060495b250f75643",
+]
+`;
+
+exports[`engine > seed golden chunk 0 is unchanged 1`] = `
+[
+  "distmount x=0.0 depth=262.5 e49c4235b475d3c8",
+  "mount x=476.8 depth=300.0 ddc65c7ee31d7807",
+  "water x=476.8 depth=-9700.0 b57675bb0826e16c",
+  "mount x=-67.3 depth=330.0 ee6c3370d06a23c6",
+  "water x=-67.3 depth=-9670.0 6ad36cae94c06101",
+  "mount x=165.7 depth=360.0 52ec98e601756d80",
+  "water x=165.7 depth=-9640.0 dd22ed32a712c3dd",
+  "mount x=122.9 depth=390.0 65e60bb03d7e33fe",
+  "water x=122.9 depth=-9610.0 a490aacca7300fa5",
+  "mount x=581.3 depth=420.0 514f92816933a768",
+  "water x=581.3 depth=-9580.0 461cc2aa0be53390",
+  "mount x=-262.7 depth=450.0 fe426bc0d5391d9e",
+  "water x=-262.7 depth=-9550.0 c478361978bc2487",
+  "mount x=410.4 depth=480.0 c20026f6de0084d6",
+  "water x=410.4 depth=-9520.0 cf648f79de758831",
+  "mount x=36.2 depth=510.0 e346f10b011c29dc",
+  "water x=36.2 depth=-9490.0 10284b4156567700",
+  "mount x=858.1 depth=300.0 cbd2cf4029f035dd",
+  "water x=858.1 depth=-9700.0 e5409c0137cb1fee",
+  "mount x=144.9 depth=330.0 296a3cc575384077",
+  "water x=144.9 depth=-9670.0 ce2957283729d3d9",
+  "mount x=52.4 depth=360.0 a0e96f20c3796229",
+  "water x=52.4 depth=-9640.0 fdc102c32df39c22",
+  "mount x=438.8 depth=390.0 2d9cb0ef63ac0b79",
+  "water x=438.8 depth=-9610.0 27778dc38d563dac",
+  "mount x=622.8 depth=420.0 b52c7daa03dca3a0",
+  "water x=622.8 depth=-9580.0 811903b020bf6802",
+  "mount x=635.4 depth=510.0 0daa4a4d5d5abc50",
+  "water x=635.4 depth=-9490.0 791af4e815ac2112",
+  "mount x=601.2 depth=540.0 f103a8e69e3c53f1",
+  "water x=601.2 depth=-9460.0 1dc64912998b5935",
+  "mount x=-26.7 depth=570.0 964279b017226ab2",
+  "water x=-26.7 depth=-9430.0 a081bbf0772307d4",
+  "mount x=707.6 depth=300.0 b7b9b9aa4fbc5a11",
+  "water x=707.6 depth=-9700.0 d46370d67c326e50",
+  "mount x=12.8 depth=330.0 6e9c30db984f0372",
+  "water x=12.8 depth=-9670.0 e30735eef794880a",
+  "mount x=111.1 depth=360.0 aef5580a93714dd4",
+  "water x=111.1 depth=-9640.0 0a0c4d14b613c3e7",
+  "mount x=875.5 depth=420.0 675780d2fb9bbae9",
+  "water x=875.5 depth=-9580.0 c91846ea868ad970",
+  "mount x=202.3 depth=450.0 264c67ffb9970caf",
+  "water x=202.3 depth=-9550.0 1d74f85f05a3d433",
+]
+`;
+
+exports[`engine > seed golden chunk 5 is unchanged 1`] = `
+[
+  "mount x=2473.9 depth=300.0 75e6d8ce0f4f58df",
+  "water x=2473.9 depth=-9700.0 f5a0578c0ee67298",
+  "mount x=2830.3 depth=330.0 08df9223d4cc39c4",
+  "water x=2830.3 depth=-9670.0 a5eb76a915e75871",
+  "mount x=2413.4 depth=360.0 ae9d447c789e8ce9",
+  "water x=2413.4 depth=-9640.0 74046557051337ff",
+  "mount x=3176.8 depth=390.0 a67e39f98356a77f",
+  "water x=3176.8 depth=-9610.0 8c3874bfe3042da3",
+  "distmount x=3000.0 depth=237.4 0083d3be90d72443",
+]
+`;

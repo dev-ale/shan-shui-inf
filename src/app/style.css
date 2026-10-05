@@ -1,0 +1,162 @@
+:root {
+  --ink: rgba(0, 0, 0, 0.4);
+  --ink-strong: rgba(0, 0, 0, 0.65);
+  --wash: rgba(0, 0, 0, 0.1);
+  --paper: #f2ebd9;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background-color: var(--paper);
+  font: 12px/1.4 ui-monospace, Menlo, Consolas, monospace;
+  color: var(--ink-strong);
+}
+
+#view {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+#view.dragging {
+  cursor: grabbing;
+}
+
+#toolbar {
+  position: fixed;
+  top: max(4px, env(safe-area-inset-top));
+  left: max(4px, env(safe-area-inset-left));
+  display: flex;
+  gap: 4px;
+}
+
+.tool {
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font: 16px/1 serif;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.tool:hover,
+.tool:focus-visible {
+  background: var(--wash);
+}
+
+#menu {
+  position: fixed;
+  top: calc(max(4px, env(safe-area-inset-top)) + 38px);
+  left: max(4px, env(safe-area-inset-left));
+  max-width: calc(100vw - 8px);
+  box-sizing: border-box;
+  padding: 8px;
+  background: var(--wash);
+  border: 1px solid var(--ink);
+  backdrop-filter: blur(6px);
+}
+#menu[hidden] {
+  display: none;
+}
+#menu label {
+  display: block;
+  margin: 8px 0 4px;
+}
+#menu label:first-child {
+  margin-top: 0;
+}
+#menu .row {
+  display: flex;
+  gap: 4px;
+}
+#menu .check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#menu select,
+#menu input:not([type="checkbox"]) {
+  min-width: 0;
+  width: 11em;
+  font: inherit;
+  padding: 3px 5px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+}
+#menu #step,
+#menu #length {
+  width: 6em;
+}
+#menu select {
+  width: auto;
+  flex: 1;
+}
+#menu .row + .row {
+  margin-top: 4px;
+}
+#save-status {
+  align-self: center;
+  color: var(--ink);
+}
+.tool[aria-pressed="true"] {
+  background: var(--wash);
+  color: var(--ink-strong);
+}
+
+/* drift mode: nothing but the painting */
+body.drift .chrome {
+  display: none !important;
+}
+body.drift #view {
+  cursor: none;
+}
+#menu button {
+  font: inherit;
+  padding: 3px 8px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  cursor: pointer;
+}
+#menu button:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#hint,
+#busy {
+  position: fixed;
+  bottom: max(10px, env(safe-area-inset-bottom));
+  color: var(--ink);
+  pointer-events: none;
+  transition: opacity 0.8s;
+}
+#hint {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hint.gone {
+  opacity: 0;
+}
+#busy {
+  right: max(12px, env(safe-area-inset-right));
+}
+#busy[hidden] {
+  display: block;
+  opacity: 0;
+}
